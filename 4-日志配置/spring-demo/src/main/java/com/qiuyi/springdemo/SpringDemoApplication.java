@@ -16,6 +16,7 @@ public class SpringDemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         log.info("this is a demo for log");
+        log.warn("this is a demo for log");
         log.error("this is a demo for log");
     }
 }
