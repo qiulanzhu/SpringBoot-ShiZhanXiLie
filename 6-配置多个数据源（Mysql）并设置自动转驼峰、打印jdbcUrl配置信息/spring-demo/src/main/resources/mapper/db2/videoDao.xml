@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qiuyi.springdemo.dao.db2.VideoDao">
+
+    <!--查询所有资讯信息-->
+    <select id="queryVideoAll" resultType="com.qiuyi.springdemo.model.Video">
+      SELECT * FROM `video`
+    </select>
+
+
+</mapper>

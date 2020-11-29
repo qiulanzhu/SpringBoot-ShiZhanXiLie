@@ -1,0 +1,1 @@
+create table foo(id int identity, value varchar(64));
