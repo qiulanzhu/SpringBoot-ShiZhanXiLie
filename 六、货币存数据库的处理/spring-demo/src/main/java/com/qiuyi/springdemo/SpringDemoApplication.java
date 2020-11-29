@@ -27,13 +27,13 @@ public class SpringDemoApplication implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         Coffee c = Coffee.builder().name("espresso")
-                .price(Money.of(CurrencyUnit.of("CNY"), 20.0))
+                .price(Money.of(CurrencyUnit.of("CNY"), 20.15))
                 .build();
         int count = coffeeMapper.save(c);
         log.info("Save {} Coffee: {}", count, c);
 
         c = Coffee.builder().name("latte")
-                .price(Money.of(CurrencyUnit.of("CNY"), 25.0))
+                .price(Money.of(CurrencyUnit.of("CNY"), 25.01))
                 .build();
         count = coffeeMapper.save(c);
         log.info("Save {} Coffee: {}", count, c);
